@@ -1,12 +1,20 @@
+/*  
+#05386B
+#379683
+#5CDB95
+#8EE4AF
+#EDF5E1
+*/
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  background-color: azure;
+  background-color: #5CDB95;
+  color: #05386B;
 }
 .title-text {
-  color: black;
+  /* color: black; */
   text-align: center;
 }
 .grand-container {
@@ -17,20 +25,22 @@ body {
 }
 .container {
   width: 45%;
-  border: 1px solid rgb(240, 240, 128);
+  border: 1px solid #EDF5E1;
+  border-radius: 12px;
   padding: 16px;
 }
 .box-number {
   width: 64px;
   height: 64px;
   padding: 8px;
-  border: 1px solid rebeccapurple;
+  border: 1px solid #8EE4AF;
   text-align: center;
   margin-left: 16px;
   margin-right: 16px;
   align-items: center;
   display: flex;
   justify-content: center;
+  border-radius: 8px;
 }
 .align-content-row {
   display: flex;
@@ -39,17 +49,46 @@ body {
   justify-content: center;
 }
 .box-number:hover {
-  background-color: blueviolet;
+  background-color: #8EE4AF;
   color: aliceblue;
-  transition: ease-in 0.5s;
+  transition: ease-in 0.3s;
 }
 .numpad {
   flex-wrap: wrap;
 }
+button{
+  all: unset;
+}
+button{
+  background-color:#EDF5E1 ;
+  padding: 12px;
+  border-radius: 12px;
+}
+button:hover{
+  background-color: #edf5e1d5;
 
+}
 @media only screen and (max-width: 767px) {
   .box-number {
     width: 32px;
     height: 32px;
   }
+  .grand-container{
+    flex-direction:column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .container{
+    width: 80%;
+    margin: 8px 0 8px 0;
+  }
+}
+li{
+  margin: 4px 0 4px 0;
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 32px 0px 32px;
 }

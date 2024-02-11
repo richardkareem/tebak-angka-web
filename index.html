@@ -9,7 +9,17 @@
   <body>
     <h2 class="title-text">Permainan Tebak Angka</h2>
 
-    <div class="grand-container" >
+    <div class="grand-container">
+      <section  class="container">
+        <h3>History Angka</h3>
+        <div class="list" id="list">
+        </div>
+        <div>
+          <h3>Ambil Agka Keberuntungan Kamu Hari Ini</h3>
+          <button id="get-btn">Ambil</button>
+          <h6 id="results-day">Adalah:</h6>
+        </div>
+      </section>
       <section class="container">
         <div>
           <h3>Tebak Angka Mu</h3>
@@ -26,30 +36,16 @@
             <h3 class="box-number">0</h3>
           </div>
         </div>
-        <h3 style="text-align: center; letter-spacing: 8px;" class="answers" id="answers"></h3>
+        <h3
+          style="text-align: center; letter-spacing: 8px"
+          class="answers"
+          id="answers"
+        ></h3>
         <div class="utils">
-          <button id="submit">
-            Submit
-          </button>
-          <button id="refresh">
-            refresh
-          </button>
+          <button id="submit">Submit</button>
+          <button id="refresh">refresh</button>
         </div>
       </section>
-
-      <!-- <section class="container">
-        <div class="child-container">
-          <h6 style="text-align: center;">Local Storage</h6>
-          <div>
-            <p>Jumlah Kombinasi Yang berhasil Di tebak</p>
-            <p style="text-align: center;">0</p>
-          </div>
-          <div>
-            <p>Jumlah Kombinasi Yang berhasil Di tebak</p>
-            <p style="text-align: center;">0</p>
-          </div>
-        </div>
-      </section> -->
     </div>
   </body>
   <script src="scipt.js"></script>
